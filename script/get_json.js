@@ -26,7 +26,7 @@
 
 function create_table_from_json(my_div_id,my_table_id,my_class,my_url){
 console.log('JSON')
-	$.getJSON(my_url,'asdsad',function(data,status,xhr){
+	$.getJSON(my_url,function(data,status,xhr){
 	console.log(xhr);
 	if(status === 'success'){
 	my_div_id.append('<table id = "'+ my_table_id +'" class = "'+ my_class +'"border= "1"></table>');
